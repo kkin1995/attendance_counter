@@ -1,1 +1,16 @@
 # attendance_counter
+
+A Simple Python Script to count number of days present for a specified name/roll number from csv files exported from Microsoft Teams.
+
+## Usage
+
+Download this repository using the "Clone/Download" option
+Save the attendance .csv files in the same folder as this repository
+Run the following command in the Terminal:
+
+```
+pip3 install -r requirements.txt
+python3 script.py [Search Term]
+```
+
+"Search Term" must be the Name/Roll Number specified exactly as mentioned in the Attendance CSV File.
