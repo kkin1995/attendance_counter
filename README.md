@@ -12,13 +12,13 @@ Run the following command in the Terminal:
 If files are .csv:
 ```
 pip3 install -r requirements.txt
-python3 csv.py [Search Term]
+python3 csv_files.py [Search Term]
 ```
 
 If files are .xlsx:
 ```
 pip3 install -r requirements.txt
-python3 excel.py [Search Term]
+python3 excel_files.py [Search Term]
 ```
 
 "Search Term" must be the Name/Roll Number specified exactly as mentioned in the Attendance CSV/Excel File.
