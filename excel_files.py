@@ -11,12 +11,13 @@ for filename in glob.glob('*.xlsx'):
     number = df['Full Name'].str.find(roll_number).values
     if 0 in number:
         present += 1
-    
+
     total_days += 1
-    
+
 percentage_present = (present / total_days) * 100
 
 f = open('present.txt', mode='w+')
 f.write("Number of days present: " + str(present) + "\n")
-f.write("Attendance Percentage: " + str(percentage_present) + " %")
+f.write("Attendance Percentage: " + str(percentage_present) + " %" + "\n")
+f.write("Total Number of Days: " + str(total_days))
 f.close()
