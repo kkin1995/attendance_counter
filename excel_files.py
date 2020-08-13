@@ -8,9 +8,15 @@ total_days = 0
 
 for filename in glob.glob('*.xlsx'):
     df = pd.read_excel(filename)
-    number = df['Full Name'].str.find(roll_number).values
-    if 0 in number:
-        present += 1
+    if 'Full Name' in df.columns:
+        number = df['Full Name'].str.find(roll_number).values
+        if 0 in number:
+            present += 1
+    
+    if 'Name' in df.columns:
+        number = df['Name'].str.find(roll_number).values
+        if 0 in number:
+            present += 1
 
     total_days += 1
 
